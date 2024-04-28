@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>نموذج مع شخصية</title>
+<style>
+/* نموذج النافذة المنبثقة */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* محتوى النموذج */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 10px;
+  border: 1px solid #888;
+  width: 40%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* صورة الشخصية */
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* اسم الشخص */
+.name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* زر الإغلاق */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* تصميم الأزرار */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button.red {
+  background-color: #f44336;
+}
+</style>
+</head>
+<body>
+
+<!-- الرابط -->
+<a href="#" id="myBtn">فتح النموذج</a>
+
+<!-- النافذة المنبثقة -->
+<div id="myModal" class="modal">
+
+  <!-- محتوى النموذج -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images/person2.jpg" alt="شخصية" class="avatar">
+    <div class="name">أهلاً بك!</div>
+    <p>عند الضغط علي موافق يعني انك ستذهب الي لينك</p>
+    <!-- الأزرار -->
+    <button class="button">موافق</button>
+    <button class="button red">إلغاء</button>
+  </div>
+
+</div>
+
+<script>
+// الحصول على العنصر
+var modal = document.getElementById('myModal');
+
+// الحصول على الرابط لفتح النموذج
+var btn = document.getElementById("myBtn");
+
+// الحصول على زر الإغلاق
+var span = document.getElementsByClassName("close")[0];
+
+// عند النقر على الرابط يتم فتح النموذج
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// عند النقر على زر الإغلاق يتم إخفاء النموذج
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// عند النقر على أي مكان خارج النموذج يتم إخفاء النموذج أيضًا
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

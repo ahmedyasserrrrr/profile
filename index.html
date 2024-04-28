@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Profile</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body >
+<div class="profile-header" style="background-color: #0A284E;">
+    <div class="cover-photo" style="background-color: #0A284E;">
+<img src="images/WhatsApp Image 2024-04-17 at 2.52.14 PM (1).jpeg"  alt="">    
+</div>
+    <div class="profile-picture">
+<img src="images/WhatsApp Image 2024-04-17 at 2.52.14 PM (1).jpeg" alt="">    </div>
+    <div class="profile-info">
+        <!-- <h1 class="text-dark">John Doe</h1> -->
+    </div>
+</div>
+<br><br>
+
+<main >
+    <section class="personal-info">
+        <div class="info">
+            <h2>شركه الرئيسيه للتطوير البرمجي</h2>
+            <ul>
+                <li><strong><i class="fas fa-handshake p-1 " style="color:slateblue; padding: 2px;  "  ></i></strong>مرحبًا بك في صفحتنا الشخصية، يسرنا جدًا أن تكون هنا :
+                </li>
+                <li><strong><i class="fas fa-user-plus " style="color: cadetblue;"  ></i></strong> <a href="">انضم الينا </a></li>
+
+                <li><strong><i class="fas fa-map-marker-alt " style="color:  red;"></i></strong>  مصر - كفر الشيخ </li>
+                <li><strong><i class=" fas fa-calendar-alt text-danger" style="color: blue;"></i></strong> عضو منذ يناير 1, 2024</li>
+                
+            </ul>
+        </div>
+        <div class="profile-image">
+<img src="images/qrcode_109026919_225349c2bf368111a9cdb1489b6c424a.png" alt="">    
+    </div>
+    </section>
+</main>
+  
+<div class="actions">
+    <a class="add-friend">انضمام</a>
+    <a class="message "  href="https://wa.me/201021700756" >تواصل معنا</a>
+</div>
+<br><br>
+<!-- <footer class="fixed-bottom">
+    <p>&copy; 2024 alrisya Profile. All rights reserved.</p>
+</footer> -->
+</body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Changa&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+body {
+    font-family: "Cairo", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+}
+
+.profile-header {
+    position: relative;
+}
+
+.cover-photo {
+    width: 100%;
+    height: 300px; /* ارتفاع بسيط لصورة الغلاف */
+    overflow: hidden; /* للتأكد من عدم زيادة الارتفاع */
+    position: static;
+}
+
+.cover-photo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    /* border: 4px solid #fff; */
+    position: absolute;
+    bottom: -60px;
+    left: 20px;
+    overflow: hidden; /* لضمان عدم ظهور أجزاء من الصورة خارج الحاجب */
+}
+
+.profile-picture img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%; /* إعادة تطبيق الشكل الدائري على الصورة */
+}
+
+/* styles.css */
+
+.personal-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info {
+    flex: 1;
+}
+
+.profile-image {
+    flex: 0 0 auto;
+    margin-left: 20px;
+}
+
+.profile-image img {
+    width: 100px;
+    height: 100px;
+    /* border-radius: 50%; */
+}
+
+.profile-info h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.main {
+    padding: 20px;
+}
+
+.personal-info {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.personal-info h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.personal-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.personal-info ul li {
+    margin-bottom: 10px;
+}
+
+.actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.actions a {
+    padding: 5px 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.add-friend {
+    background-color: #42b72a;
+    color: white;
+}
+
+.message {
+    background-color: #1778f2;
+    color: white;
+}
+
+footer {
+    background-color: #3b5998;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+</style>
+</html>
